@@ -20,7 +20,7 @@ pan_connect = ConnectHandler(**PaloAlto_Panorama)
 output = pan_connect.send_command('show system info', expect_string=r">")
 pan_connect.disconnect()
 
-with open(r'F:\panorama\panos.txt', 'a') as f:
+with open(r'F:\Fakepath\panos.txt', 'a') as f:
     f.write(output)
     f.close()
 
